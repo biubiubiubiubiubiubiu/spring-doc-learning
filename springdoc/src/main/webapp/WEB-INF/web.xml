@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+
+    <display-name>Dispatched Servlet Demo</display-name>
+
+    <!--使用根 context 來管理 servlet 的配置-->
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>WEB-INF/root-context.xml</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>dispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value></param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+        <async-supported>true</async-supported>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <!--使用 <servlet-name>-servlet.xml 來管理 servlet 配置-->
+
+    <!--<servlet>-->
+        <!--<servlet-name>example</servlet-name>-->
+        <!--<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>-->
+        <!--<load-on-startup>1</load-on-startup>-->
+        <!--&lt;!&ndash;load on startup 大于 0 代表这个容器在应用启动时就加载，而等于 0 则表示在这个容器被选择时加载&ndash;&gt;-->
+        <!--&lt;!&ndash;load-on-startup 的值越小，代表加载的优先级越大&ndash;&gt;-->
+    <!--</servlet>-->
+
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>example</servlet-name>-->
+        <!--<url-pattern>/example/*</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+
+
+</web-app>
