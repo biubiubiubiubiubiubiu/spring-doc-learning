@@ -15,3 +15,5 @@
 * [Spring MVC 4.2.4 文档实践（三）--- WebApplicationContext 中特殊的 bean 类型（二）--- LocaleResolver](https://biubiubiubiubiubiubiu.github.io/2018/11/01/Spring%20MVC%204.2.4%20%E6%96%87%E6%A1%A3%E5%AE%9E%E8%B7%B5(%E4%B8%89)--LocaleResolver/)
 * [Spring MVC 4.2.4 文档实践（二）--- WebApplicationContext 中特殊的 bean 类型（一）--- 请求/异常处理](https://biubiubiubiubiubiubiu.github.io/2018/10/29/Spring%20MVC%204.2.4%20%E6%96%87%E6%A1%A3%E5%AE%9E%E8%B7%B5(%E4%BA%8C)--%E8%AF%B7%E6%B1%82_%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/)
 * [Spring MVC 4.2.4 文档实践（一）--- Spring MVC 工程准备](https://biubiubiubiubiubiubiu.github.io/2018/10/12/Spring%20MVC%204.2.4%20%E6%96%87%E6%A1%A3%E5%AE%9E%E8%B7%B5(%E4%B8%80)/)
+
+**转载请注明出处** 
